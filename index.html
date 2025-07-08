@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>residence-Rejiche - الصفحة العربية</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0; padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      direction: rtl;
+    }
+    header {
+      background: #004aad;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+    section.info {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 6px #aaa;
+      margin-bottom: 2rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      padding: 0.3rem 0;
+      border-bottom: 1px solid #ddd;
+    }
+    form {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 6px #aaa;
+    }
+    label {
+      display: block;
+      margin: 0.5rem 0 0.2rem;
+    }
+    input {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 1rem;
+      padding: 0.7rem 1.2rem;
+      background: #004aad;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #003080;
+    }
+    footer {
+      text-align: center;
+      margin: 2rem 0 1rem;
+      color: #555;
+    }
+    @media (max-width: 600px) {
+      main {
+        margin: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>residence-Rejiche</h1>
+    <p>منازل للكراء في الرجيش - المهدية - تونس</p>
+  </header>
+
+  <main>
+    <section class="info">
+      <h2>معلومات السكن</h2>
+      <ul>
+        <li>غرفتين وصالون ومطبخ وحمام</li>
+        <li>وافي (واي فاي)</li>
+        <li>مكيف</li>
+        <li>قريب من البحر</li>
+        <li>الأسعار: من 100 إلى 150 دينار تونسي</li>
+      </ul>
+    </section>
+
+    <section class="booking">
+      <h2>نموذج الحجز</h2>
+      <form action="https://formsubmit.co/Chahirechi2019@gmail.com" method="POST">
+        <label for="name">الاسم الكامل</label>
+        <input type="text" id="name" name="name" required placeholder="أدخل اسمك الكامل" />
+
+        <label for="phone">رقم الهاتف</label>
+        <input type="tel" id="phone" name="phone" required placeholder="أدخل رقم هاتفك" />
+
+        <label for="arrival">تاريخ الوصول</label>
+        <input type="date" id="arrival" name="arrival" required />
+
+        <label for="nights">عدد الأيام</label>
+        <input type="number" id="nights" name="nights" min="1" required placeholder="كم عدد الأيام؟" />
+
+        <button type="submit">إرسال الحجز</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 residence-Rejiche | جميع الحقوق محفوظة</p>
+  </footer>
+</body>
+</html>
